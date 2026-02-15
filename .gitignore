@@ -1,0 +1,58 @@
+# Python Cache Files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MLflow Tracking Files
+mlruns/
+mlflow.db
+mlartifacts/
+
+# Large Data Files
+Data/*
+!Data/Customer-Churn-Records.csv
+
+# Temporary / Old Model Files
+Models/*_backup.pkl
+Models/temp_*.pkl
+Models/old_*.pkl
+
+# Logs
+*.log
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker Local Cache
+*.tar
+
+# Build / Packaging Files
+dist/
+build/
+*.egg-info/
+
+# Environment Variables
+.env
+.env.local
+
+# Temporary Project Notes
+Steps.md
+notes.txt
+TODO.md
