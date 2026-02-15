@@ -37,7 +37,9 @@ Dockerfile → Container setup
 
 ## Docker Setup
 docker pull debabrata7/churn-app:latest
+
 Run Container
+
 docker run -p 8000:8000 -p 8501:8501 debabrata7/churn-app
 
 🌐 Access Application
