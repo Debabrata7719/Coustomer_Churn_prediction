@@ -1,0 +1,26 @@
+{
+    "model_type": "RandomForestClassifier",
+    "test_accuracy": 0.832,
+    "f1_score": 0.631578947368421,
+    "precision": 0.5714285714285714,
+    "recall": 0.7058823529411765,
+    "n_features": 16,
+    "feature_names": [
+        "CreditScore",
+        "Age",
+        "Tenure",
+        "Balance",
+        "NumOfProducts",
+        "HasCrCard",
+        "IsActiveMember",
+        "EstimatedSalary",
+        "Satisfaction Score",
+        "Point Earned",
+        "Geography_Germany",
+        "Geography_Spain",
+        "Gender_Male",
+        "Card Type_GOLD",
+        "Card Type_PLATINUM",
+        "Card Type_SILVER"
+    ]
+}
