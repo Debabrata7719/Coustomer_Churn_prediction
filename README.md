@@ -2,6 +2,7 @@
 
 An end-to-end Machine Learning application that predicts whether a bank customer will **stay or leave (churn)** using a trained Random Forest model.
 
+---
 
 ## 🚀 Features
 
@@ -11,9 +12,13 @@ An end-to-end Machine Learning application that predicts whether a bank customer
 - MLflow experiment tracking
 - Fully Dockerized for easy deployment
 
+---
+
 ## 🛠 Tech Stack
 
 Python • Scikit-learn • FastAPI • Streamlit • MLflow • Docker
+
+---
 
 ## 📂 Project Structure
 
