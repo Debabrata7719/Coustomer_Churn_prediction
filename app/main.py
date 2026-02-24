@@ -11,10 +11,6 @@ app = FastAPI(
     version="2.0.0"
 )
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
-
 # ---------------------------
 # LOAD SAVED MODEL FILES
 # ---------------------------
@@ -111,7 +107,7 @@ def home():
 
 
 @app.get("/health")
-def health_check():
+def health():
     """Health check endpoint for Docker/monitoring"""
     return {
         "status": "healthy",
