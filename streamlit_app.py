@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import requests
 import pandas as pd
@@ -104,8 +105,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-API_URL = "http://api:8000/predict"
-HEALTH_URL = "http://api:8000/health"
+API_URL = os.getenv("API_URL", "http://localhost:8000/predict")
+HEALTH_URL = os.getenv("HEALTH_URL", "http://localhost:8000/health")
 
 
 # -----------------------------------------------
@@ -119,7 +120,7 @@ st.divider()
 # API STATUS CHECK
 # -----------------------------------------------
 try:
-    r = requests.get("http://api:8000/", timeout=2)
+    r = requests.get(HEALTH_URL.replace("/health", "/"), timeout=2)
     if r.status_code == 200:
         st.markdown('<p class="status-ok">🟢 Connected to prediction API</p>', unsafe_allow_html=True)
     else:

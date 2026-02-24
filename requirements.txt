@@ -11,3 +11,5 @@ matplotlib
 seaborn
 xgboost
 jupyter
+pytest
+httpx
